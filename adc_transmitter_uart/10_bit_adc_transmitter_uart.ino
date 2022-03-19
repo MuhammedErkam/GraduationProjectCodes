@@ -7,8 +7,7 @@ void setup()
 
 void loop() {
   int adc_val = analogRead(mic_in);
-  adc_val>>2;
+  adc_val = adc_val>>2;
   
   Serial.write(adc_val);
-  //delay(4);
 }
